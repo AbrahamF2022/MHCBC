@@ -109,6 +109,21 @@
             width: 100%;
             height: 100%;
         }
+        .navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px; /* Space between image and text */
+}
+
+/* Optional: Adjust text size if needed */
+.navbar-brand span {
+    font-size: 17px;
+}
         /* Media Queries */
         @media (max-width: 768px) {
             .header-container {
@@ -173,21 +188,26 @@
 <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container px-5">
-                <a class="text-white navbar-brand" style="font-size: 17px;" href="index.html"><b>Mount Hermon Community Baptist Church</b></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item fw-bolder"><a class="text-white nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item fw-bold"><a class="text-white nav-link" href="about.html">About Us</a></li>
-                        <li class="nav-item fw-bold"><a class="text-white nav-link" href="contact.html"> Times & Events</a></li>
-                        <li class="nav-item fw-bold"><a class="text-white nav-link" href="blog-post.html">Donate</a></li>
-                        <li class="nav-item fw-bold"><a class="text-white nav-link" href="faq.html">Messages</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container px-5">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="Praying%20Hands.webp" alt="Logo" class="navbar-logo">
+            <span class="text-white" style="font-size: 16px;"><b>Mount Hermon Community Baptist Church</b></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item fw-bolder"><a class="text-white nav-link" href="index.html">Home</a></li>
+                <li class="nav-item fw-bold"><a class="text-white nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item fw-bold"><a class="text-white nav-link" href="contact.html">Times & Events</a></li>
+                <li class="nav-item fw-bold"><a class="text-white nav-link" href="blog-post.html">Donate</a></li>
+                <li class="nav-item fw-bold"><a class="text-white nav-link" href="faq.html">Messages</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
         <!-- Header-->
         <header class="py-5">
             <div class="container px-5">
@@ -247,7 +267,7 @@
                     <div class="small m-0 text-white">Copyright &copy; Mount Hermon Community Baptist Church</div>
                 </div>
                 <div class="col-auto">
-                    <p class="text-white">Made by Techy.Develops</p>
+                    <h7 class="text-white">Made by Techy.Develops</h7>
                 </div>
             </div>
         </div>

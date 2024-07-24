@@ -35,6 +35,21 @@
             height: auto; /* This will maintain the aspect ratio */
             max-width: 100%; /* Ensure it doesn't exceed the container width */
         }
+         .navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px; /* Space between image and text */
+}
+
+/* Optional: Adjust text size if needed */
+.navbar-brand span {
+    font-size: 17px;
+}
         @media (max-width: 768px) {
             .gallery img {
                 width: 370px; /* Adjust width for smaller screens */
@@ -155,7 +170,7 @@
                     <div class="small m-0 text-white">Copyright &copy; Techy Seniors</div>
                 </div>
                 <div class="col-auto">
-                    <p class="text-white">Made by Techy.Develops</p>
+                    <h7 class="text-white">Made by Techy.Develops</h7>
                 </div>
             </div>
         </div>
