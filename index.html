@@ -14,45 +14,40 @@
     <link href="css/styles.css" rel="stylesheet" />
     <style>
         /* General Styles */
-       
-   
-        
+        section {
+            align-content: center;
+            background-color: white;
+            justify-content: center;
+            text-align: center;
+        }
         body {
             background-image: url('background3.jpg');
             background-size: cover;
             background-attachment: fixed;
         }
-
-        
-
         .btn-plan-event, .btn-gallery {
             background-color: white;
             color: black;
-            border-color: black
+            border-color: #2E4053;
         }
-
         .header-container {
             display: flex;
             flex-direction: row;
             align-items: center;
             text-align: left;
         }
-
         .header-text {
             flex: 1;
             margin-right: 20px;
             text-align: left;
         }
-
         .header-text h1 {
             font-size: 3.5rem;
         }
-
         .header-image {
             flex: 1;
             text-align: right;
         }
-
         .four-boxes-container {
             display: flex;
             flex-wrap: wrap;
@@ -60,66 +55,119 @@
             align-items: flex-start;
             padding: 20px;
         }
-
+        h5 {
+            font-size: 25px;
+        }
         .four-box {
             width: 45%;
             margin: 10px;
             padding: 20px;
             border: 1px solid #ccc;
             border-radius: 10px;
-            background-color:  #2E4053;
+            background-color: #2E4053;
             text-align: center;
         }
-
         .four-box img {
             width: 85px;
             height: auto;
             margin: 5px;
         }
         .navbar {
-            
-            background-color: #2E4053
+            background-color: #2E4053;
         }
-         footer {
-        background-color: #2E4053; /* Change this to your desired color */
-        color: white; /* Ensure text is visible */
-    }
-
+        footer {
+            background-color: #2E4053;
+            color: white;
+        }
+        .responsive-video-container {
+            position: relative;
+            padding-bottom: 75%;  /* 16:9 aspect ratio */ 
+            height: auto;
+            overflow: hidden;
+            width: 700px;
+            background: #000;
+        }
+        .responsive-video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .responsive-map-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+        .responsive-map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
         /* Media Queries */
         @media (max-width: 768px) {
             .header-container {
                 flex-direction: column;
                 text-align: center;
             }
-
             .header-text {
                 margin-right: 0;
                 text-align: center;
             }
-
             .header-image {
                 text-align: center;
                 margin-top: 20px;
             }
-
             .header-text h1 {
                 font-size: 3.0rem;
             }
-
             .four-boxes-container {
                 flex-direction: column;
                 align-items: center;
             }
-
             .four-box {
                 width: 90%;
             }
-             
             .slide img {
                 height: 10px;
                 width: auto;
             }
-        
+            .responsive-video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+        .responsive-video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .responsive-map-container {
+            position: relative;
+            padding-bottom: 75%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+        .responsive-map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        }
     </style>
 </head>
 <body class="d-flex flex-column h-100">
@@ -127,23 +175,15 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container px-5">
-                <a class="text-white navbar-brand" href="index.html"><b>Mount Hermon Community Baptist Church</b></a>
+                <a class="text-white navbar-brand" style="font-size: 17px;" href="index.html"><b>Mount Hermon Community Baptist Church</b></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item fw-bolder"><a class="text-white nav-link" href="index.html">Home</a></li>
                         <li class="nav-item fw-bold"><a class="text-white nav-link" href="about.html">About Us</a></li>
                         <li class="nav-item fw-bold"><a class="text-white nav-link" href="contact.html"> Times & Events</a></li>
-                        <li class="nav-item fw-bold"><a class="text-white nav-link" href="pricing.html">Donate</a></li>
+                        <li class="nav-item fw-bold"><a class="text-white nav-link" href="blog-post.html">Donate</a></li>
                         <li class="nav-item fw-bold"><a class="text-white nav-link" href="faq.html">Messages</a></li>
-                      <!--  <li class="nav-item fw-bold"><a class="text-white nav-link" href="portfolio-item.html">Techy TV</a></li>
-                         <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-white" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b>Support</b></a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-                                    <li><a class="text-black dropdown-item" href="blog-home.html"><b>Volunteer Sign Up</b></a></li>
-                                    <li><a class="text-black dropdown-item" href="blog-post.html"><b>Donate</b></a></li>
-                                </ul>
-                            </li> -->
                     </ul>
                 </div>
             </div>
@@ -154,65 +194,53 @@
                 <div class="row gx-5 align-items-center justify-content-center header-container">
                     <div class="col-lg-8 col-xl-7 col-xxl-6 header-text">
                         <div class="my-5 text-center text-xl-start">
-                            <h1 class="display-4 fw-bolder text-white mb-3" >Mount Hermon Community Baptist Church</h1>
+                            <h1 class="display-4 fw-bolder text-white mb-3">Mount Hermon Community Baptist Church</h1>
                             <p class="lead fw-normal text-white mb-4"><b>A Place Where Jesus is Lord and Believers are One in the Bond of Love</b></p>
                             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                                      <a class="btn btn-light btn-lg px-4 rounded-pill btn-gallery fw-bold" href="contact.html">Donate</a>
-                                <a class="btn  btn-lg px-4 rounded-pill btn-gallery fw-bold" href="faq.html">Messages</a>
-                                <!-- <a class="btn btn-light btn-lg px-4 me-sm-3 rounded-pill btn-plan-event fw-bold" href="blog-post.html">Donate</a> -->
-                            
-                                
-                                
+                                <a class="btn btn-light btn-lg px-4 rounded-pill btn-gallery fw-bold" href="contact.html">Donate</a>
+                                <a class="btn btn-lg px-4 rounded-pill btn-gallery fw-bold" href="faq.html">Messages</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-5 col-xxl-6 header-image">
-                       <!-- <img class="img-fluid rounded-circle my-4" src="Praying%20Hands.webp" alt="Show Stoppers Academy"> --> 
-                        <iframe width="714" height="514" src="https://www.youtube.com/embed/ff263DpMWiM" title="MHCBC Sunday Morning Worship Service 07/14/2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="responsive-video-container">
+                            <iframe src="https://www.youtube.com/embed/ff263DpMWiM" title="MHCBC Sunday Morning Worship Service 07/14/2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
-
         <!-- Four Boxes Section -->
         <section class="text-black four-boxes-container">
-            
-           
             <div class="four-box text-white" id="box3">
                 <h3><b>We are located at...</b></h3>
-                <br><h4><b>1171 Sunset Strip, Sunrise, FL 33313</b></h4>
-               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7163.593860150278!2d-80.2345110248036!3d26.13816337711733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d906ff63cb2735%3A0x9ca594226d3c986a!2s1171%20Sunset%20Strip%2C%20Sunrise%2C%20FL%2033313!5e0!3m2!1sen!2sus!4v1721092500731!5m2!1sen!2sus" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h4><b>1171 Sunset Strip, Sunrise, FL 33313</b></h4>
+                <div class="responsive-map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7163.593860150278!2d-80.2345110248036!3d26.13816337711733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d906ff63cb2735%3A0x9ca594226d3c986a!2s1171%20Sunset%20Strip%2C%20Sunrise%2C%20FL%2033313!5e0!3m2!1sen!2sus!4v1721092500731!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
             <div class="four-box text-white" id="box2">
                 <h3><b>Connect With Us!</b></h3><br>
-                <h4><b>Email: mounthermoncbc@gmail.com</b></h4> <br>
-                <h4><b>Phone: 954-792-4274</b></h4> <br>
-                
-                 <h3><b>Click to Connect!</b></h3> <br>
+                <h4><b>Email: mounthermoncbc@gmail.com</b></h4>
+                <h4><b>Phone: 954-792-4274</b></h4><br>
+                <h3><b>Click to Connect!</b></h3> 
                 <a href="https://www.facebook.com/MHCBC/">
                     <img src="facebook2.png" alt="Facebook">
-                </a> 
+                </a>
                 <a href="https://www.instagram.com/mthermonsunrisefl/?hl=en">
                     <img src="instagram2.png" alt="Instagram">
-                </a> <br>
-                 <a href="https://www.tiktok.com/@mounthermonsunrisefl">
+                </a><br><br>
+                <a href="https://www.tiktok.com/@mounthermonsunrisefl">
                     <img src="tiktok2.png" alt="Tiktok">
                 </a>
-                  <a href="https://www.youtube.com/channel/UCns3Y8jdaS9aF1jAAm8yriA">
+                <a href="https://www.youtube.com/channel/UCns3Y8jdaS9aF1jAAm8yriA">
                     <img src="Youtube.png" alt="Youtube">
                 </a>
-                
             </div>
-           
-           
-           
-            
-          
         </section>
-        
     </main>
     <!-- Footer-->
-    <footer class="footer py-4 mt-auto footer">
+    <footer class="footer py-4 mt-auto">
         <div class="container px-5">
             <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                 <div class="col-auto">
@@ -224,7 +252,6 @@
             </div>
         </div>
     </footer>
-
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->

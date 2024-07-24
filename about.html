@@ -33,8 +33,8 @@
             margin: 50px 0;
         }
         .gallery img {
-            width: 300px;
-            height: 300px;
+            width: auto;
+            height: 200px;
             object-fit: cover;
             margin: 20px;
         }
@@ -49,10 +49,21 @@
             
             background-color: #2E4053
         }
+        p{
+            font-size: 20px;
+        }
+        h3{
+            font-size: 40px;
+        }
          footer {
         background-color: #2E4053; /* Change this to your desired color */
         color: white; /* Ensure text is visible */
     }
+        img{
+            
+            height: auto;
+            width: 74%;
+        }
         /* Media Queries */
         @media (max-width: 768px) {
             .about-text {
@@ -66,6 +77,10 @@
                .Board img {
         width: 100%; /* Make images fill the container width */
     }
+             .navbar {
+           
+            background-color: #2E4053
+        }
 }
         }
     </style>
@@ -75,15 +90,15 @@
         <!-- Navigation-->
          <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container px-5">
-                <a class="text-white navbar-brand" href="index.html"><b>Mount Hermon Community Baptist Church</b></a>
+                <a class="text-white navbar-brand" style="font-size: 17px;" href="index.html"><b>Mount Hermon Community Baptist Church</b></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item fw-bolder"><a class="text-white nav-link" href="index.html">Home</a></li>
                         <li class="nav-item fw-bold"><a class="text-white nav-link" href="about.html">About Us</a></li>
                         <li class="nav-item fw-bold"><a class="text-white nav-link" href="contact.html"> Times & Events</a></li>
-                        <li class="nav-item fw-bold"><a class="text-white nav-link" href="pricing.html">Donate</a></li>
-                        <li class="nav-item fw-bold"><a class="text-white nav-link" href="faq.html">Messages</a></li>
+                        <li class="nav-item fw-bold"><a class="text-white nav-link" href="blog-post.html">Donate</a></li>
+                        <li class="nav-item fw-bold"><a class="text-white nav-link" href="faq.html">Messages</a></li> 
                       <!--  <li class="nav-item fw-bold"><a class="text-white nav-link" href="portfolio-item.html">Techy TV</a></li>
                          <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle text-white" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b>Support</b></a>
@@ -99,7 +114,7 @@
         <!-- Header-->
         <section class="bg-silver py-5">
             <div class="container px-5 my-5 text-center">
-                <h2 class="display-4 fw-bolder text-white mb-3" style="font-size: 60px;"><b>Our Mission</b></h2>
+                <h2 class="display-4 fw-bolder text-white mb-3" style="font-size: 70px;"><b>Our Mission</b></h2>
             </div>
         </section>
         <div class="container px-4">
@@ -109,18 +124,10 @@
                       <p class="lead text-black mb-4 about-text"><b>Welcome to Mount Hermon Community Baptist Church! Since our establishment in 1991, we have been dedicated to serving the beautiful community of Sunrise, Florida. Under the compassionate leadership of Senior Pastor Morrison since 2006, we strive to be a beacon of hope and love in our area.</b></p>
 
                         <p class="lead text-black mb-4 about-text"><b>Our mission is clear: To broadcast the Word of God throughout our community and bring others to know and experience God's love through the various ministries of our church. We believe in the power of connection and the importance of sharing God’s message with everyone around us.</b> </p> <br>
-    
-<p><b>Our Community Engagement</b></p>
+                      
+                      
 
-<p class="lead text-black mb-4 about-text"><b>At Mount Hermon, we are committed to being there for our community through a variety of activities and programs. Join us for: <br>
-
-<ul>
-<li>Free Movies on First Fridays: Enjoy a fun-filled evening with family and friends while watching inspiring films. </li>
-<li>Breakfasts on Saturday: Start your weekend with a warm meal and fellowship.</li>
-<li>Online Services: Participate in worship from the comfort of your home, ensuring everyone can connect with God’s Word.</li> </ul> <br>
-As it says in Philippians 4:13, “I can do all things through Christ who strengthens me.” We encourage everyone to draw strength from their faith and find joy in our gatherings.</b></p> <br>
-
-<p> Join Us</p>
+<h3> <b>Join Us</b></h3> <br>
                         
 <p class="lead text-black mb-4 about-text"><b>We invite you to explore our various ministries and activities, where you can grow in your faith and experience the love of God in action. Whether you are new to the community or seeking a church home, we welcome you with open arms.</b></p>
                         
@@ -128,7 +135,7 @@ As it says in Philippians 4:13, “I can do all things through Christ who streng
 
 <p class="lead text-black mb-4 about-text"><b>At Mount Hermon Community Baptist Church, we are more than just a church—we are a family. Join us as we embark on this journey together, spreading God’s love and light in our community. We look forward to welcoming you!</b></p>
                         
-                        <p class="lead text-black mb-4 about-text"><b>Contact Us</b></p>
+                        <h3><b>Contact Us</b></h3> <br>
 
 
                       <p class="lead text-black mb-4 about-text"><b>
@@ -160,8 +167,8 @@ For more information about our services and activities, please feel free to reac
                         </div>
                         <div class="col-lg-6 col-xl-5 py-lg-5">
                             <div class="p-4 p-md-5">
-                                <div class="fw-bolder"><h2><b>Gmail Tutorial</b></h2></div>
-                                <p>Join Abraham Flynn as he guides you through the process of creating a Gmail Google account, perfect for those considering a switch or establishing their very first account. Do you know a senior who could benefit from this information? Don’t hesitate to share it with them or direct them to our YouTube channel.</p>
+                                <div class="fw-bolder"><h2><b>Rev. Fitz A. Morrison</b></h2></div>
+                                <p>Write Write Write</p>
                             </div>
                         </div>
                        
@@ -169,7 +176,7 @@ For more information about our services and activities, please feel free to reac
                 </div>
             </div>
         </div>
-        
+        <br><br>
     </main>
     <footer class=" py-4 mt-auto">
         <div class="container px-5">
