@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Mount Hermon Community Baptist Church</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <link rel="stylesheet" href="lightbox.css">
-    </head>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Mount Hermon Community Baptist Church</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="lightbox.css">
     <style>
         .gallery img {
             width: 150px; /* Set the width you want for the images */
-            height:  150px; /* Set the height you want for the images */
+            height: 150px; /* Set the height you want for the images */
             object-fit: cover; /* This ensures the images cover the area without distortion */
             margin: 5px; /* Optional: Add some space between the images */
         }
@@ -30,14 +29,12 @@
             padding: 50px 0; /* Adjust padding as needed */
         }
         footer {
-        background-color: #2E4053; /* Change this to your desired color */
-        color: white; /* Ensure text is visible */
-    }
-           .navbar {
-            
-            background-color: #2E4053
+            background-color: #2E4053; /* Change this to your desired color */
+            color: white; /* Ensure text is visible */
         }
-        
+        .navbar {
+            background-color: #2E4053;
+        }
         .gallery {
             display: flex;
             flex-wrap: wrap; /* Allow items to wrap to the next line if they don't fit */
@@ -49,111 +46,182 @@
             max-width: 400px; /* Set the maximum width you want for the iframes */
             height: auto; /* Maintain aspect ratio */
         }
-         .navbar-brand {
-    display: flex;
-    align-items: center;
-}
-
-.navbar-logo {
-    width: 40px; /* Adjust size as needed */
-    height: auto;
-    margin-right: 10px; /* Space between image and text */
-}
-
-/* Optional: Adjust text size if needed */
-.navbar-brand span {
-    font-size: 17px;
-}
-       @media (max-width: 768px) {
-    .gallery img {
-        width: 370px; /* Adjust width for smaller screens */
-        height: 400px
-        
-    }
-}
-
-
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-logo {
+            width: 40px; /* Adjust size as needed */
+            height: auto;
+            margin-right: 10px; /* Space between image and text */
+        }
+        /* Optional: Adjust text size if needed */
+        .navbar-brand span {
+            font-size: 17px;
+        }
+        @media (max-width: 768px) {
+            .gallery img {
+                width: 370px; /* Adjust width for smaller screens */
+                height: 400px;
+            }
+        }
+        .accordion-item {
+            border: none;
+            box-shadow: none;
+        }
+        .accordion-button {
+            box-shadow: none;
+            font-size: 18px; /* Increase font size */
+            font-weight: bold; /* Make text bold */
+            background-color: #2E4053; /* Background color of the accordion button */
+            color: white; /* Text color */
+            border: 1px solid #2E4053; /* Border color */
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: #1f2d36; /* Darker blue when the accordion is open */
+            color: white; /* Text color when open */
+        }
+        .accordion-button:hover {
+            background-color: #1f2d36; /* Darker blue on hover */
+            color: white; /* Text color on hover */
+        }
+        .accordion-body {
+            padding: 0;
+        }
+        .accordion-body iframe {
+            width: 100%;
+            height: 400px; /* Adjust height as needed */
+            margin-bottom: 10px; /* Space between iframes */
+        }
+        .accordion-button:focus {
+            box-shadow: none; /* Remove outline box shadow */
+        }
     </style>
-    <body class="d-flex flex-column h-100">
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-                <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container px-5">
-        <a class="navbar-brand d-flex align-items-center" href="index.html">
-            <img src="Praying%20Hands.webp" alt="Logo" class="navbar-logo">
-            <span class="text-white" style="font-size: 16px;"><b>Mount Hermon Community Baptist Church</b></span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item fw-bolder"><a class="text-white nav-link" href="index.html">Home</a></li>
-                <li class="nav-item fw-bold"><a class="text-white nav-link" href="about.html">About Us</a></li>
-                <li class="nav-item fw-bold"><a class="text-white nav-link" href="contact.html">Times & Events</a></li>
-                <li class="nav-item fw-bold"><a class="text-white nav-link" href="blog-post.html">Donate</a></li>
-                <li class="nav-item fw-bold"><a class="text-white nav-link" href="faq.html">Messages</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-              <!-- Page Content-->
-            <section class="special-section">
-            <div class="container px-5 my-5 text-center">
-                <h2 class="display-4 fw-bolder text-white mb-3" style="font-size: 50px;">Click To Hear Our Services</h2>
-                 <a class="text-white" href="https://www.youtube.com/@mounthermoncommunitybaptis532/streams"><h2>Or Click Here to View Our Youtube Channel</h2></a>
+</head>
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container px-5">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="Praying%20Hands.webp" alt="Logo" class="navbar-logo">
+                    <span class="text-white" style="font-size: 16px;"><b>Mount Hermon Community Baptist Church</b></span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item fw-bolder"><a class="text-white nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item fw-bold"><a class="text-white nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item fw-bold"><a class="text-white nav-link" href="contact.html">Times & Events</a></li>
+                        <li class="nav-item fw-bold"><a class="text-white nav-link" href="blog-post.html">Donate</a></li>
+                        <li class="nav-item fw-bold"><a class="text-white nav-link" href="faq.html">Messages</a></li>
+                    </ul>
+                </div>
             </div>
-        </section>
-            <br><br>
-            
-   <div class="containe bg-white" >
-        <div class="gallery">
-           <iframe width="400" height="200" src="https://www.youtube.com/embed/jG7FCsRuFdA" title="MHCBC Sunday Morning Worship Service 07/21/2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      
-   <iframe width="400" height="200" src="https://www.youtube.com/embed/UQSrOEMkFVs" title="MHCBC Wednesday Night Bible Fellowship 07/017/2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            
-            
-           <iframe width="400" height="200" src="https://www.youtube.com/embed/ff263DpMWiM" title="MHCBC Sunday Morning Worship Service 07/14/2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            
-        <iframe width="914" height="514" src="https://www.youtube.com/embed/HaIV3_FaHbo" title="MHCBC Wednesday Night Bible Fellowship 07/10/2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            
-           
-            
-            <iframe width="914" height="514" src="https://www.youtube.com/embed/QAULNuK03_M" title="MHCBC Wednesday Night Bible Fellowship 07/03/2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            
-            
-          <iframe width="914" height="514" src="https://www.youtube.com/embed/dYvlMsj_-pU" title="MHCBC Sunday Morning Worship Service 06/30/2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            
-            <iframe width="914" height="514" src="https://www.youtube.com/embed/shdhX6Pmf-E" title="MHCBC Wednesday Night Bible Fellowship 06/26/2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            
-            <iframe width="914" height="514" src="https://www.youtube.com/embed/EC7O9Pe4rl0" title="MHCBC Sunday Morning Worship Service 06/23/2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            
-            <iframe width="914" height="514" src="https://www.youtube.com/embed/oSowXFuXYOo" title="MHCBC Wednesday Night Bible Fellowship 06/19/2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            
-            <iframe width="914" height="514" src="https://www.youtube.com/embed/XSG7axQ6Mug" title="MHCBC Father&#39;s Day Sunday Morning Worship Service 06/16/2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          
-         
-           
-           <!--<a href="PIC.png" data-lightbox="models" data-title="Caption1">
-             <img src="PIC.png">
-            </a> -->
-       </div>
+        </nav>
+
+        <!-- Page Content-->
+        <section class="special-section">
+            <div class="container px-5 my-5 text-center">
+                <h2 class="display-4 fw-bolder text-white mb-3" style="font-size: 70px;">View Our Services</h2>
+                <a class="text-white" style="font-size: 40px;" href="https://www.youtube.com/@mounthermoncommunitybaptis532/streams"><h2>Or Click Here to View Our Youtube Channel</h2></a>
+            </div>
+        
+        <!-- Accordion for Videos -->
+        <div class="container">
+            <div class="accordion" id="videoAccordion">
+                <!-- First Accordion Item -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <b>Sunday Services</b>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#videoAccordion">
+                        <div class="accordion-body">
+                            <iframe src="https://www.youtube.com/embed/jG7FCsRuFdA" title="MHCBC Sunday Morning Worship Service 07/21/2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/ff263DpMWiM" title="MHCBC Sunday Morning Worship Service 07/14/2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/dYvlMsj_-pU" title="MHCBC Sunday Morning Worship Service 06/30/2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/EC7O9Pe4rl0" title="MHCBC Sunday Morning Worship Service 06/23/2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/XSG7axQ6Mug" title="MHCBC Father&#39;s Day Sunday Morning Worship Service 06/16/2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Accordion Item -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <b>Wednesday Night Services</b>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#videoAccordion">
+                        <div class="accordion-body">
+                            <iframe src="https://www.youtube.com/embed/UQSrOEMkFVs" title="MHCBC Wednesday Night Bible Fellowship 07/017/2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/HaIV3_FaHbo" title="MHCBC Wednesday Night Bible Fellowship 07/10/2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/QAULNuK03_M" title="MHCBC Wednesday Night Bible Fellowship 07/03/2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/shdhX6Pmf-E" title="MHCBC Wednesday Night Bible Fellowship 06/26/2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                             <iframe src="https://www.youtube.com/embed/oSowXFuXYOo" title="MHCBC Wednesday Night Bible Fellowship 06/19/2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Third Accordion Item -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <b>Shorts</b>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#videoAccordion">
+                        <div class="accordion-body">
+                            <iframe width="356" height="634" src="https://www.youtube.com/embed/z_I3dy6AziM" title="A Place Where Jesus Is Lord And Believers Are One In The Bond Of Love #browardcounty #browardchurch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="356" height="634" src="https://www.youtube.com/embed/cY_24d-gIiI" title="A Place Where Jesus Is Lord And Believers Are One In The Bond Of Love #browardcounty #motivation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="356" height="634" src="https://www.youtube.com/embed/C2NmqcGh02s" title="Live a life pleasing to God! #browardchurch #churchservice #browardcounty #sundaymorningservice" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="356" height="634" src="https://www.youtube.com/embed/JyH3gzgqAB4" title="Praise God!! #browardchurch #churchservice #browardcounty #sundaymorningservice" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="356" height="634" src="https://www.youtube.com/embed/00jCp0oDYvA" title="Communion Sunday 02/04/24 #browardchurch #browardcounty #mhcbc #southfloridachurch #communionsunday" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h1 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <b>Special Services</b>
+                        </button>
+                    </h1>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#videoAccordion">
+                        <div class="accordion-body">
+                            <iframe width="914" height="514" src="https://www.youtube.com/embed/XSG7axQ6Mug" title="MHCBC Father&#39;s Day Sunday Morning Worship Service 06/16/2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="914" height="514" src="https://www.youtube.com/embed/gV3ULZxMJm0" title="MHCBC Mother&#39;s Day Sunday Morning Worship Service 05/12/2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="914" height="514" src="https://www.youtube.com/embed/ULh3Evw-wwY" title="MHCBC Resurrection Sunday Morning Worship Service 03/31/2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="914" height="514" src="https://www.youtube.com/embed/mQbAcmP1KVA" title="MHCBC Sunday Morning Worship Service 03/24/2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="914" height="514" src="https://www.youtube.com/embed/bE6XvgmVXdI" title="MHCBC Sunday Morning Worship Service 02/25/2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-            
-       <footer class="py-4 mt-auto">
+            <br><br><br><br>
+        </section>
+       
+        <footer class="py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                     <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Mount Hermon Community Baptist Church</div></div>
-                     <div class="col-auto">
-                    <h7 class="text-white">Made by Techy.Develops</h7>
-                </div>
+                    <div class="col-auto">
+                        <h7 class="text-white">Made by Techy.Develops</h7>
+                    </div>
                 </div>
             </div>
         </footer>
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-            <script src="lightbox-plus-jquery.js"> </script>
+        <script src="lightbox-plus-jquery.js"> </script>
     </body>
 </html>
