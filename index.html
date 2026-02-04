@@ -119,7 +119,7 @@
     height: auto;
     margin-right: 10px; /* Space between image and text */
 }
-#box4 {
+        #box4 {
     width: 95%; /* Make it larger than the other boxes */
     margin: 10px auto; /* Center it horizontally */
     padding: 20px;
@@ -128,6 +128,46 @@
     background-color: #2E4053;
     text-align: center;
 }
+        /* Anniversary Popup Modal Styles */
+        .anniversary-modal .modal-dialog {
+            max-width: 90%;
+            margin: 1.75rem auto;
+        }
+        .anniversary-modal .modal-content {
+            background: transparent;
+            border: none;
+        }
+        .anniversary-modal .modal-body {
+            padding: 0;
+            text-align: center;
+        }
+        .anniversary-modal .anniversary-image {
+            width: 100%;
+            height: auto;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        .anniversary-modal .btn-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            opacity: 1;
+            z-index: 1051;
+        }
+        .anniversary-modal .btn-close:hover {
+            background-color: rgba(255, 255, 255, 1);
+        }
+        @media (max-width: 768px) {
+            .anniversary-modal .modal-dialog {
+                max-width: 95%;
+            }
+            .anniversary-modal .anniversary-image {
+                max-width: 100%;
+            }
+        }
 
 #box4 img {
     width: 100%; /* Adjust the image width as needed */
@@ -249,7 +289,7 @@
                     </div>
                     <div class="col-xl-5 col-xxl-6 header-image">
                         <div class="responsive-video-container">
-                           <iframe width="914" height="514" src="https://www.youtube.com/embed/pxqHhdX9XHw" title="MHCBC Sunday Morning Worship Service 12/29/2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                           <iframe width="914" height="514" src="https://www.youtube.com/embed/2bFiSYaoTho" title="MHCBC Live Service" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -292,6 +332,17 @@
             </div> -->
         </section>
     </main>
+    <!-- Anniversary Popup Modal -->
+    <div class="modal fade anniversary-modal" id="anniversaryModal" tabindex="-1" aria-labelledby="anniversaryModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <img src="Anniversary35th.png" alt="35th Anniversary Save The Date" class="anniversary-image">
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Footer-->
     <footer class="footer py-4 mt-auto">
         <div class="container px-5">
@@ -309,5 +360,24 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <!-- Anniversary Popup Script -->
+    <script>
+        // Show anniversary popup when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if user has already dismissed the popup in this session
+            const popupShown = sessionStorage.getItem('anniversaryPopupShown');
+            
+            if (!popupShown) {
+                // Wait a moment for page to fully load, then show modal
+                setTimeout(function() {
+                    const anniversaryModal = new bootstrap.Modal(document.getElementById('anniversaryModal'));
+                    anniversaryModal.show();
+                    
+                    // Mark as shown in this session
+                    sessionStorage.setItem('anniversaryPopupShown', 'true');
+                }, 500);
+            }
+        });
+    </script>
 </body>
 </html>
